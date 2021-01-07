@@ -23,12 +23,7 @@
           <div id="bar2" class="bar"></div>
           <div id="bar3" class="bar"></div>
         </div>
-        <!-- Navigation starts as empty UL that will be populated with JS -->
-        <ul id="navbar__list" class="nav">
-          <li><a class="menu__link" data-target="section1">section1</a></li>
-          <li><a class="menu__link" data-target="section2">section2</a></li>
-          <li><a class="menu__link" data-target="section3">section3</a></li>
-        </ul>
+        <ul id="navbar__list" class="nav"></ul>
       </nav>
       <div class="menu-bg" id="menu-bg"></div>
       <div class="bg-blur" onclick="onClickMenu()"></div>
@@ -41,7 +36,7 @@
     a data attribute that will populate the li node.
     Adding more sections will automatically populate nav.
     The first section is set to active class by default -->
-      <section id="section1" data-nav="Section 1" class="your-active-class">
+      <section id="section1" data-nav="Section 1" class="">
         <div class="landing__container">
           <h2>Section 1</h2>
           <p>

@@ -2,12 +2,67 @@
 
 ## Table of Contents
 
-* [Instructions](#instructions)
+- [Global Variables](#Global-Variables)
+- [Main Functions](#Main-Functions)
+  - [onClickMenu](#onClickMenu)
+  - [activate](#activate)
+  - [scrollTarget](#scrollTarget)
+- [Events](#Events)
+  - [navigation Bar item clicked](#navigation-Bar-item-clicked)
+  - [window is scrolled](#window-is-scrolled)
 
-## Instructions
+## Global Variables
 
-The starter project has some HTML and CSS styling to display a static version of the Landing Page project. You'll need to convert this project from a static project to an interactive one. This will require modifying the HTML and CSS files, but primarily the JavaScript file.
+the sections of the page at the var `sectionN`
+an the navigation links an the var `navBtns` or `navBtnN`
 
-To get started, open `js/app.js` and start building out the app's functionality
+> note: `N` is number
 
-For specific, detailed instructions, look at the project instructions in the Udacity Classroom.
+## Main Functions
+
+the main functions that i use in my project
+
+### onClickMenu
+
+function fire when the burger icon is clicked
+with no `args`
+to toggle the navbar on or off
+
+#### vars
+
+`menu` : the contairner of the burger icon bars
+
+`nav` : the container of the navigation links
+
+`navGrid` : the fansy background of the nav
+`blurBG` : the blur background **works only on chrome**
+
+change the menu from burger icon to X
+
+show the menu items
+
+show the menu background grid
+
+blur the back ground
+
+### activate
+
+actiave the section in view
+
+when scroll this function fire and active the
+section in view by adding call `active`
+
+### scrollTarget
+
+take the Id of the target from the passed element
+then add scroll to that element
+
+## Events
+
+### navigation Bar item `clicked`
+
+call the function [scrollTarget](#scrollTarget) and pass the navigation link
+
+### window is `scrolled`
+
+call the function [activate](#activate)
